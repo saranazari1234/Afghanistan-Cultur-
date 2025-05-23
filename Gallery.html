@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Elegant Gold Gallery</title>
+  <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Vazir', sans-serif;
+      background: #121212;
+      color: #fff;
+      padding: 2rem;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #FFD700;
+      margin-bottom: 2rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: linear-gradient(145deg, #1e1e1e, #2a2a2a);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+      transition: transform 0.4s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(255, 215, 0, 0.3);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 2px solid #FFD700;
+    }
+
+    .card-content {
+      padding: 1rem;
+    }
+
+    .card-content h3 {
+      margin-top: 0;
+      color: #FFD700;
+      font-size: 1.3rem;
+    }
+
+    .card-content p {
+      font-size: 0.95rem;
+      color: #ddd;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+  <h2>Elegant Gold Gallery</h2>
+  <div class="gallery">
+
+    <div class="card">
+      <img src="images (2).jpeg" alt="Location 1" />
+      <div class="card-content">
+        <h3>kabul</h3>
+        <p>Kabul, city, capital of the province of Kabul and of Afghanistan. The largest urban centre in the country and also its political and economic hub, the city forms one of several districts of Kabul provinc</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="download (3).jpeg" alt="Location 2" />
+      <div class="card-content">
+        <h3>South of Afghanistan</h3>
+        <p>One of the most famous riverin the South of Afghanistan. </p>
+      </div>
+    </div>
+
+    <!-- Add more cards here -->
+
+  </div>
+</body>
+</html>
